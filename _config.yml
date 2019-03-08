@@ -87,3 +87,10 @@ backup:
     type: git
     repository:
         github: git@github.com:logTXT/logtxt.github.io.git,backup
+
+#Local Search
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
