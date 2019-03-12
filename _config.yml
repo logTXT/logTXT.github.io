@@ -35,7 +35,7 @@ titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
 filename_case: 0
 render_drafts: false
-post_asset_folder: true
+post_asset_folder: false
 relative_link: false
 future: true
 highlight:
@@ -85,6 +85,7 @@ deploy:
 #BACKUP
 backup:
     type: git
+    theme: next
     repository:
         github: git@github.com:logTXT/logtxt.github.io.git,backup
 
@@ -97,24 +98,24 @@ abbrlink:
 # all_minifier: true
 
 # neat
-neat_enable: true
+# neat_enable: true
 
-neat_html:
-  enable: true
-  exclude:
+# neat_html:
+#   enable: true
+#   exclude:
 
-neat_css:
-  enable: true
-  exclude:
-    - '*.min.css'
+# neat_css:
+#   enable: true
+#   exclude:
+#     - '*.min.css'
 
-neat_js:
-  enable: true
-  mangle: true
-  output:
-  compress:
-  exclude:
-    - '*.min.js'
+# neat_js:
+#   enable: true
+#   mangle: true
+#   output:
+#   compress:
+#   exclude:
+#     - '*.min.js'
 
 #Local Search
 search:
@@ -122,3 +123,10 @@ search:
   field: post
   format: html
   limit: 10000
+
+leancloud_counter_security:
+  enable_sync: true
+  app_id: vrmre0oN324gVixAJBgv3COb-gzGzoHsz
+  app_key: ShidGho5niQ1xX4QEFR3UJDX
+  username: logtxt@qq.com # Will be asked while deploying if is left blank
+  password: 6u4FBHXSWjFetG3 # Recommmended to be left blank. Will be asked while deploying if is left blank
