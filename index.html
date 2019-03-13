@@ -356,6 +356,249 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://logtxt.xyz/2019/9c90/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="唐新天">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="https://img.vim-cn.com/74/3e06b1f31bd9ad9ef6d4a4f5f1a1819b4ef0a8.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="logTXT's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/9c90/" class="post-title-link" itemprop="url">聚类分析</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-03-13 10:12:41 / Modified: 11:22:54" itemprop="dateCreated datePublished" datetime="2019-03-13T10:12:41+08:00">2019-03-13</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/学习笔记/" itemprop="url" rel="index"><span itemprop="name">学习笔记</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/学习笔记/互联网数据分析/" itemprop="url" rel="index"><span itemprop="name">互联网数据分析</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+            <span id="/2019/9c90/" class="leancloud_visitors" data-flag-title="聚类分析">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Views: </span>
+              
+                <span class="leancloud-visitors-count"></span>
+            </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="类分析"><a href="#类分析" class="headerlink" title="类分析"></a>类分析</h2><h3 id="1-概述"><a href="#1-概述" class="headerlink" title="1. 概述"></a>1. 概述</h3><p>通过对现有用户分群，以期对不同类别的用户采用不同的营销方式，如交叉营销(cross-sell)、向上营销(up-sell)等，并对可能流失的用户提前预警并采取相应措<br>施。</p>
+<h4 id="常用聚类分析方法："><a href="#常用聚类分析方法：" class="headerlink" title="常用聚类分析方法："></a>常用聚类分析方法：</h4><h5 id="划分法"><a href="#划分法" class="headerlink" title="划分法"></a>划分法</h5><p>以距离作为数据集中不同数据间的相似性度量，将数据集划分成多个簇</p>
+<p>方法：k-means、k-medoids</p>
+<h5 id="层次法"><a href="#层次法" class="headerlink" title="层次法"></a>层次法</h5><p>对给定的数据集进行层次分解，形成一个树形的聚类结果</p>
+<p>方法：自顶向下法、自底向上法</p>
+<h3 id="2-相似性计算"><a href="#2-相似性计算" class="headerlink" title="2. 相似性计算"></a>2. 相似性计算</h3><p>在聚类分析中，样本之间的相似性通常采用样本之间的距离来表示。</p>
+<p>样本之间的经历实在样本的描述属性（特征）上进行计算的</p>
+<p>样本的描述属性类型可能不同，相对应的计算方法也不同</p>
+<h4 id="连续性属性"><a href="#连续性属性" class="headerlink" title="连续性属性"></a>连续性属性</h4><p>重量、高度、年龄等</p>
+<p>X~i~ =()</p>
+<h4 id="二值离散属性"><a href="#二值离散属性" class="headerlink" title="二值离散属性"></a>二值离散属性</h4><h4 id="多值离散属性"><a href="#多值离散属性" class="headerlink" title="多值离散属性"></a>多值离散属性</h4><p>转换为二值属性进行计算</p>
+<h4 id="混合类型属性"><a href="#混合类型属性" class="headerlink" title="混合类型属性"></a>混合类型属性</h4><h3 id="划分聚类法：k-means"><a href="#划分聚类法：k-means" class="headerlink" title="划分聚类法：k-means"></a>划分聚类法：k-means</h3><h4 id="优点："><a href="#优点：" class="headerlink" title="优点："></a>优点：</h4><p>可扩展性比较好，算法复杂度为O(nkt)（n为样本数量，k是簇的个数，t是迭代次数）</p>
+<h4 id="缺点："><a href="#缺点：" class="headerlink" title="缺点："></a>缺点：</h4><p>簇数k需要事先给定</p>
+<p>初始点的选择影响算法迭代次数和聚类结果</p>
+<p>对噪声和离群点数据敏感</p>
+<p>其他缺陷：只能处理连续、二值、定序的数据类型，不能处理离散分类变量</p>
+<h4 id="节点编辑"><a href="#节点编辑" class="headerlink" title="节点编辑"></a>节点编辑</h4><p>更改容忍度：</p>
+<p>集合编码值：避免二值属性数值高于连续属性的情况</p>
+<p>轮廓系数（Silhouette系数）：</p>
+<ul>
+<li>a~i~表示样本i到同簇其他样本的平均距离</li>
+<li>b~i~表示样本i到其他簇的最小平均距离</li>
+<li>单个样本的轮廓系数s(i)为：$s(i)=(b(i)-a(i))/max{a(i),b(i)} $</li>
+<li>总体轮廓系数可取单个样本轮廓系数的平均值，轮廓系数大小在-1（极差）到1（极好）之间。</li>
+</ul>
+<p>新生成的字段kMD-K-Means 到聚类中心点的距离 </p>
+<h4 id="案例："><a href="#案例：" class="headerlink" title="案例："></a>案例：</h4><p><strong>汽车数据表</strong></p>
+<p>在进行聚类之前可以按照意义生成一些新变量，这些新变量可能会对聚类结果有不同的影响</p>
+<p><strong>卖家表</strong></p>
+<ol>
+<li>数据清洗，剔除全部缺失的行、将信用等级转换为数值型变量（最初一对一转换效果不好，改成二对一转换，即两个相邻档次对应一个数值</li>
+<li>年龄按固定宽度分级，10岁为一级</li>
+<li>使用年龄、信用等级、性别三项数据进行聚类，聚类k值设为6时，轮廓系数最优</li>
+<li>结果解读：年龄大多在20~30之间，信用为3~4之间，性别全部分开</li>
+<li>拓展：处理省份按发达程度分类后加入聚类</li>
+</ol>
+<p>使用自动聚类节点比较不同的聚类算法的结果，在<code>放弃</code>选项栏下选择筛选条件</p>
+<h3 id="两步聚类"><a href="#两步聚类" class="headerlink" title="两步聚类"></a>两步聚类</h3><h4 id="预聚类阶段-pre-clustering"><a href="#预聚类阶段-pre-clustering" class="headerlink" title="预聚类阶段(pre-clustering)"></a>预聚类阶段(pre-clustering)</h4><p>采用了<code>BIRCH算法</code>中CF树生长的思想,逐个读取数据集中数据点,在生成CF树的同时,预先聚类密集区域的数据点,形成诸多的小的子簇(sub-cluster)。</p>
+<h4 id="聚类阶段-clustering"><a href="#聚类阶段-clustering" class="headerlink" title="聚类阶段(clustering)"></a>聚类阶段(clustering)</h4><p>以预聚类阶段的结果——子簇为对象,采用分层聚类方法递归逐个地合并子簇,直到期望的簇数量。</p>
+<h4 id="BIRCH算法"><a href="#BIRCH算法" class="headerlink" title="BIRCH算法"></a>BIRCH算法</h4><ul>
+<li>BIRCH算法的核心是利用树结构来快速的聚类,一般将它称之为聚类特征树(Clustering Feature Tree,简称CFTree)。</li>
+<li>这颗树的每一个节点是由若干个聚类特征 (Clustering Feature,简称CF)组成。每 个节点包括叶子节点都有若干个CF,而内 部节点的CF有指向子节点的指针,所有的 叶子节点用一个双向链表链接起来。</li>
+</ul>
+<p>一个聚类特征CF的定义:<br>每一个CF是一个三元组,可以用(N, LS,SS)表示。其中N代表了这个CF中 拥有的样本点的数量;LS代表了这个CF 中拥有的样本点各特征维度的和向量, SS代表了这个CF中拥有的样本点各特征 维度的平方和。</p>
+<h5 id="CF树的性质"><a href="#CF树的性质" class="headerlink" title="CF树的性质"></a>CF树的性质</h5><ul>
+<li>CF满足线性关系,即:<br>CF1+CF2=(N1+N2,LS1+LS2,SS1+SS2)。</li>
+<li>在CF Tree中,对于每个父节点中的CF 节点,它的(N,LS,SS)三元组的值等于 这个CF节点所指向的所有子节点的三元组之和。</li>
+</ul>
+<h5 id="CF树的属性"><a href="#CF树的属性" class="headerlink" title="CF树的属性"></a>CF树的属性</h5><ul>
+<li>B是每个内部节点的最大CF数,L是每个叶子节点的最大CF 数,对于上图中的CF Tree,限定了B=7, L=5, 也就是 说内部节点最多有7个CF,而叶子节点最多有5个CF。</li>
+<li>叶节点每个CF的最大样本半径阈值T,也就是说,在这个 CF中的所有样本点一定要在半径小于T的一个超球体内。</li>
+</ul>
+<h5 id="CF树的生成"><a href="#CF树的生成" class="headerlink" title="CF树的生成"></a>CF树的生成</h5><ol>
+<li>从根节点向下寻找和新样本距离最近的叶子节点和叶子 节点里最近的CF节点。<ol start="2">
+<li>如果新样本加入后,这个CF节点对应的超球体半径仍然 满足小于阈值T,则更新路径上所有的CF三元组,插入结束 。否则转入3.</li>
+<li>如果当前叶子节点的CF节点个数小于阈值L,则创建一个 新的CF节点,放入新样本,将新的CF节点放入这个叶子节点 ,更新路径上所有的CF三元组,插入结束。否则转入4。</li>
+<li>将当前叶子节点划分为两个新叶子节点,选择旧叶子节 点中所有CF元组里超球体距离最远的两个CF元组,分别作为 两个新叶子节点的第一个CF节点。将其他元组和新样本元组 按照距离远近原则放入对应的叶子节点。依次向上检查父节 点是否也要分裂,如果需要按和叶子节点分裂方式相同。</li>
+</ol>
+</li>
+</ol>
+<h5 id="生成CF树之后"><a href="#生成CF树之后" class="headerlink" title="生成CF树之后"></a>生成CF树之后</h5><p>BIRCH算法的主要过程,就是建立CF Tree 的过程,此外还包括对CF Tree的优化。 如:</p>
+<ul>
+<li>去除一些异常CF节点,这些节点一般里面的 样本点很少。对于一些超球体距离非常近的 元组进行合并。</li>
+<li>利用其它的一些聚类算法比如K-Means对所有 的CF元组进行聚类,主要目的是消除由于样 本读入顺序导致的不合理的树结构,以及一 些由于节点CF个数限制导致的树结构分裂。</li>
+</ul>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://logtxt.xyz/2019/f61d/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -741,7 +984,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-count">3</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -762,7 +1005,11 @@
                     
                       
                     
-                    <span class="site-state-item-count">2</span>
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">4</span>
                     <span class="site-state-item-name">categories</span>
                   </a>
                 </div>
@@ -785,7 +1032,11 @@
                     
                       
                     
-                    <span class="site-state-item-count">3</span>
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">5</span>
                     <span class="site-state-item-name">tags</span>
                   </a>
                 </div>
