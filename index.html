@@ -401,16 +401,53 @@
                 
               
 
-              <time title="Created: 2019-03-13 18:51:10 / Modified: 20:18:30" itemprop="dateCreated datePublished" datetime="2019-03-13T18:51:10+08:00">2019-03-13</time>
+              <time title="Created: 2019-03-13 18:51:10" itemprop="dateCreated datePublished" datetime="2019-03-13T18:51:10+08:00">2019-03-13</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-03-14 23:55:21" itemprop="dateModified" datetime="2019-03-14T23:55:21+08:00">2019-03-14</time>
               
             
           </span>
 
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/学习笔记/" itemprop="url" rel="index"><span itemprop="name">学习笔记</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/学习笔记/MIS系统分析与设计/" itemprop="url" rel="index"><span itemprop="name">MIS系统分析与设计</span></a></span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -452,284 +489,22 @@
 
       
         
-          
-            <h2 id="第三章：企业信息与数据建模"><a href="#第三章：企业信息与数据建模" class="headerlink" title="第三章：企业信息与数据建模"></a>第三章：企业信息与数据建模</h2><h3 id="3-4-编码模型"><a href="#3-4-编码模型" class="headerlink" title="3.4 编码模型"></a>3.4 编码模型</h3><ul>
+          <h2 id="第三章：企业信息与数据建模"><a href="#第三章：企业信息与数据建模" class="headerlink" title="第三章：企业信息与数据建模"></a>第三章：企业信息与数据建模</h2><h3 id="3-4-编码模型"><a href="#3-4-编码模型" class="headerlink" title="3.4 编码模型"></a>3.4 编码模型</h3><ul>
 <li>编码的含义<ul>
 <li>用来代表某实体或实体某属性的一种符号,通常由数码、字母组成。</li>
-<li>例：公民、学生、职工、电话就是是实体，而身份证号码、学号、职工号、电话号码就是相应的编码。</li>
-</ul>
-</li>
-<li>编码对象<ul>
-<li>需要编码的实体或实体某属性的统称</li>
-</ul>
-</li>
-<li>编码的作用（为什么要用编码？）<ul>
-<li><strong>唯一地</strong>标识一个实体或属性值</li>
-<li>系统集成的基础</li>
-<li>便于分类和统计</li>
-<li>在某些场合节省存储空间</li>
-</ul>
-</li>
-</ul>
-<h4 id="编码结构"><a href="#编码结构" class="headerlink" title="编码结构"></a>编码结构</h4><h5 id="按编码基本结构分类"><a href="#按编码基本结构分类" class="headerlink" title="按编码基本结构分类"></a>按编码基本结构分类</h5><h6 id="顺序码"><a href="#顺序码" class="headerlink" title="顺序码"></a>顺序码</h6><ul>
-<li>一种以连续的数字或字符代表编码对象的编码</li>
-<li>例：连续的数字0,1,2,3……，或以A、B、C、</li>
-<li>特点：<ul>
-<li>编码简单、简短等</li>
-<li>可维护性差</li>
-</ul>
-</li>
-<li>例：在日常生活中，街道两旁的门牌号码一般采用顺序码</li>
-</ul>
-<h6 id="块码"><a href="#块码" class="headerlink" title="块码"></a>块码</h6><ul>
-<li>一种特殊的顺序码。它将顺序码按照一定的方式,将编码分成若干段或者块,每一段或块代表一定类型的编码对象。</li>
-<li><strong>例</strong>：我国邮政编码采用6位数码,其第1-2位采用块码标识省、自治区和直辖市,第3位标识市,第4位标识县(区),第5-6位标识投递区,例如1-2位为“43”和“44”均标识湖北省。</li>
-<li>特点<ul>
-<li>与顺序码相比，具有较好的可维护性</li>
-<li>需要分段合适，预留有足够的码，该结构就具有较好的维护性</li>
-<li>较顺序码复杂</li>
-<li>不方便满足分类、统计的需求（例如select湖北省<em>以43,44</em>开头的语句）</li>
-</ul>
-</li>
-</ul>
-<h6 id="层次码"><a href="#层次码" class="headerlink" title="层次码"></a>层次码</h6><ul>
-<li>现实中<ul>
-<li>编码对象之间的关系具有一定的层次关系</li>
-<li>例：物品、产品、地区</li>
-</ul>
-</li>
-<li>顺序码和块码：不适合对具有层次结构的编码对象</li>
-<li><p>层次码</p>
-<ul>
-<li>根据编码对象一定的层次关系，确定若干位，并排成一定的层次关系</li>
-<li>适合对具有层次结构的编码对象。</li>
-</ul>
-</li>
-<li><p>特点</p>
-<ul>
-<li>结构清晰、可维护性强。（方便，常用）</li>
-</ul>
-</li>
-<li>不足<ul>
-<li>编码的设计较复杂。采用层次码是，首先要沥青编码对象的层次结构。</li>
-</ul>
-</li>
-</ul>
-<h6 id="特征码"><a href="#特征码" class="headerlink" title="特征码"></a>特征码</h6><ul>
-<li>在编码模型中，为编码对象的多个属性各规定一个位置（若干位码），从而表示编码对象不同属性</li>
-<li>与顺序码、块码、层次码不同:编码中表示的各属性之间没有关系,是<strong>相互独立</strong>的。（可以出现相同的编码，如身份证号中的生日）</li>
-<li>特点：组合灵活、设计简单</li>
-<li>适用场合：一般用于枚举型的编码对象<ul>
-<li>例如：性别、直径、形状等</li>
-</ul>
-</li>
-</ul>
-<h5 id="按照编码中采用的符号分类"><a href="#按照编码中采用的符号分类" class="headerlink" title="按照编码中采用的符号分类"></a>按照编码中采用的符号分类</h5><ul>
-<li>数字型编码<ul>
-<li>采用若干位数字进行编码，其数字可以是十进制、八进制、二进制等<ul>
-<li>身份证号、邮政编码、电话号码</li>
-</ul>
-</li>
-<li>优点：具有排序方便的</li>
-<li>缺点：不直观</li>
-</ul>
-</li>
-<li>字母型编码</li>
-<li>字母数字型编码</li>
-</ul>
-<h5 id="按编码设计的范围分类"><a href="#按编码设计的范围分类" class="headerlink" title="按编码设计的范围分类"></a>按编码设计的范围分类</h5><h6 id="全局编码"><a href="#全局编码" class="headerlink" title="全局编码"></a>全局编码</h6><p>多用于一类业务的使用</p>
-<ul>
-<li>例如：产品编码、原材料编码、设备编码</li>
-</ul>
-<h6 id="局部编码"><a href="#局部编码" class="headerlink" title="局部编码"></a>局部编码</h6><p>仅一类用户的使用</p>
-<ul>
-<li>会计科目编码</li>
-</ul>
-<p><img src="https://i.loli.net/2019/03/13/5c88eaabbe127.png" alt="商贸企业编码模型"></p>
-<p><img src="https://i.loli.net/2019/03/13/5c88ec10e28fa.png" alt="公民身份证号模型"></p>
-
+<li>例：公民、学生、职工、电话就是是实体，而身份证号码、学号、职工号、电话号码就是相应的编码。
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/f1da/" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://logtxt.xyz/2019/c933/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="唐新天">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="https://img.vim-cn.com/74/3e06b1f31bd9ad9ef6d4a4f5f1a1819b4ef0a8.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="logTXT's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/c933/" class="post-title-link" itemprop="url">决策树</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-03-13 11:23:42 / Modified: 13:26:06" itemprop="dateCreated datePublished" datetime="2019-03-13T11:23:42+08:00">2019-03-13</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/学习笔记/" itemprop="url" rel="index"><span itemprop="name">学习笔记</span></a></span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/学习笔记/互联网数据分析/" itemprop="url" rel="index"><span itemprop="name">互联网数据分析</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-            <span id="/2019/c933/" class="leancloud_visitors" data-flag-title="决策树">
-              <span class="post-meta-divider">|</span>
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Views: </span>
-              
-                <span class="leancloud-visitors-count"></span>
-            </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            
-          
-        
-      
-    </div>
+    </li></ul></li></ul></div>
 
     
 
@@ -1355,7 +1130,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">5</span>
+                    <span class="site-state-item-count">4</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -1380,7 +1155,11 @@
                     
                       
                     
-                    <span class="site-state-item-count">4</span>
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">5</span>
                     <span class="site-state-item-name">categories</span>
                   </a>
                 </div>
@@ -1409,7 +1188,19 @@
                     
                       
                     
-                    <span class="site-state-item-count">6</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">9</span>
                     <span class="site-state-item-name">tags</span>
                   </a>
                 </div>
@@ -1487,7 +1278,7 @@
         <h3 class="widget-title">Tag Cloud</h3>
         <div id="myCanvasContainer" class="widget tagcloud">
             <canvas width="250" height="250" id="resCanvas" style="width=100%">
-                <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Manjaro/">Manjaro</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/install/">install</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/决策树/">决策树</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数据分析/">数据分析</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数据挖掘/">数据挖掘</a><span class="tag-list-count">1</span></li></ul>
+                <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/MIS/">MIS</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Manjaro/">Manjaro</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/install/">install</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/建模/">建模</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数据与信息/">数据与信息</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数据分析/">数据分析</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数据挖掘/">数据挖掘</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/编码/">编码</a><span class="tag-list-count">1</span></li></ul>
             </canvas>
         </div>
     </div>
